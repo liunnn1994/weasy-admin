@@ -1,0 +1,51 @@
+{
+  "name": "echo-mind",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "AGPL-3.0-or-later",
+  "author": "Norris Lau <norris.lau.work@gmail.com> (https://github.com/liunnn1994)",
+  "type": "module",
+  "scripts": {
+    "cz": "git-cz",
+    "prepare": "simple-git-hooks",
+    "semantic-release": "semantic-release",
+    "upgrade:all": "run-s upgrade:deps upgrade:engines format:pkg",
+    "upgrade:deps": "npx taze -r -w",
+    "upgrade:engines": "node scripts/upgradeEngines.mjs"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "lint-staged",
+    "commit-msg": "commitlint -e"
+  },
+  "dependencies": {
+    "axios": "^1.7.9"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.7.1",
+    "@commitlint/config-conventional": "^19.7.1",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/exec": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/gitlab": "^13.2.4",
+    "@semantic-release/gitlab-config": "^14.0.1",
+    "@semantic-release/npm": "^12.0.1",
+    "eslint": "^9.19.0",
+    "eslint-plugin-oxlint": "^0.10.1",
+    "git-cz": "^4.9.0",
+    "lint-staged": "^15.4.3",
+    "oxlint": "^0.15.10",
+    "prettier": "^3.4.2",
+    "prettier-plugin-packagejson": "^2.5.8",
+    "semantic-release": "^24.2.1",
+    "simple-git-hooks": "^2.11.1"
+  },
+  "packageManager": "pnpm@10.2.0",
+  "engines": {
+    "node": "22.13.1"
+  },
+  "volta": {
+    "node": "22.13.1",
+    "pnpm": "10.2.0"
+  }
+}
