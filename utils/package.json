@@ -1,0 +1,7 @@
+{
+  "name": "@echo-mind/utils",
+  "type": "module",
+  "exports": {
+    "./*": "./*.ts"
+  }
+}

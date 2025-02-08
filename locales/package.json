@@ -1,0 +1,7 @@
+{
+  "name": "@echo-mind/locales",
+  "type": "module",
+  "exports": {
+    "./*": "./*.ts"
+  }
+}
