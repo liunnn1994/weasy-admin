@@ -11,7 +11,7 @@
     "cz:server": "pnpm -r --filter @echo-mind/server run cz",
     "prepare": "simple-git-hooks",
     "semantic-release": "semantic-release",
-    "upgrade:all": "run-s upgrade:deps upgrade:engines format:pkg",
+    "upgrade:all": "run-s upgrade:deps upgrade:engines",
     "upgrade:deps": "npx taze -r -w",
     "upgrade:engines": "node scripts/upgradeEngines.mjs",
     "dev:web": "pnpm -r --filter @echo-mind/web run dev",
@@ -36,13 +36,13 @@
     "git-cz": "^4.9.0",
     "lint-staged": "^15.4.3",
     "npm-run-all2": "^7.0.2",
-    "prettier": "^3.4.2",
+    "prettier": "^3.5.0",
     "prettier-plugin-packagejson": "^2.5.8",
     "prettier-plugin-tailwindcss": "^0.6.11",
-    "semantic-release": "^24.2.1",
+    "semantic-release": "^24.2.2",
     "simple-git-hooks": "^2.11.1"
   },
-  "packageManager": "pnpm@10.2.0",
+  "packageManager": "pnpm@10.2.1",
   "engines": {
     "node": "22.13.1"
   },
