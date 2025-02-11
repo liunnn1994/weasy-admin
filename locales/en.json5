@@ -1,3 +1,7 @@
 {
   appName: 'EchoMind',
+  theme: {
+    light: 'Light',
+    dark: 'Dark',
+  },
 }
