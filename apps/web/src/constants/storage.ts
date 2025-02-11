@@ -1,2 +1,2 @@
 // 用户保存的语言
-export const LANG_STORAGE_KEY = 'lang';
+export const LANG_STORAGE_KEY = '__LANGUAGE__';

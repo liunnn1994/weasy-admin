@@ -3,16 +3,15 @@
   import { i18nextPromise } from '@/plugins/i18n';
 
   const { i18next } = useTranslation();
-
   const route = useRoute();
 
   watchImmediate(
     () => route.params.lang,
-    (lang) => {
-      console.log('-------------------App.vue watch', lang);
+    async (lang) => {
       if (lang) {
-        i18next.changeLanguage(lang as string);
+        await i18next.changeLanguage(lang as string);
       }
+      localStorage.setItem(LANG_STORAGE_KEY, i18next.language);
     },
   );
 

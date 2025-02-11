@@ -7,13 +7,20 @@ import vueDevTools from 'vite-plugin-vue-devtools';
 import Components from 'unplugin-vue-components/vite';
 import IconsResolver from 'unplugin-icons/resolver';
 import Icons from 'unplugin-icons/vite';
+import vuetify from 'vite-plugin-vuetify';
+import tailwindcss from '@tailwindcss/vite';
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
     vueJsx(),
-    vueDevTools(),
+    tailwindcss(),
+    vuetify({
+      styles: {
+        configFile: 'src/assets/vuetify.scss',
+      },
+    }),
     Components({
       resolvers: [IconsResolver()],
     }),
@@ -67,6 +74,7 @@ export default defineConfig({
         filepath: './.eslintrc-auto-import.json', // Default `./.eslintrc-auto-import.json`
       },
     }),
+    vueDevTools(),
   ],
   resolve: {
     alias: {

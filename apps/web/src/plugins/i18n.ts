@@ -21,7 +21,6 @@ export const i18nextPromise = i18next
     backend: {
       loadPath: '/api/locale/{{lng}}',
     },
-    debug: true,
     fallbackLng,
     load: 'currentOnly',
     lng: getDefaultLang(),

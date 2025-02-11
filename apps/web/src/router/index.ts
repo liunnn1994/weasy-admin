@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
+import NProgress from 'nprogress';
 import i18nGuard, { getDefaultLang } from '@/router/i18nGuard';
 import { RouterNameEnum } from '@/enum/router';
 
@@ -17,7 +18,7 @@ const router = createRouter({
     {
       path: '/:lang/dashboard',
       name: RouterNameEnum.DASHBOARD_NAME,
-      component: import('@/views/HomeView.vue'),
+      component: () => import('@/views/HomeView.vue'),
     },
     {
       path: '/:lang/about',
@@ -30,6 +31,15 @@ const router = createRouter({
       component: () => import('@/views/NotFoundView.vue'),
     },
   ],
+});
+
+router.beforeEach(async (to, from, next) => {
+  NProgress.start();
+  return next();
+});
+
+router.afterEach(() => {
+  NProgress.done();
 });
 
 i18nGuard(router);
