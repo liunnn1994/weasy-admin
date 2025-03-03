@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import { preload } from '@echo-mind/locales/index';
+  import { preload } from '@weasy/locales/index';
   import languageIcon from '~icons/flowbite/language-outline';
 
   const route = useRoute();

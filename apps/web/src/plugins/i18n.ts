@@ -1,7 +1,7 @@
 import i18next from 'i18next';
 import I18NextVue from 'i18next-vue';
 import LanguageDetector from 'i18next-browser-languagedetector';
-import { fallbackLng, preload } from '@echo-mind/locales/index';
+import { fallbackLng, preload } from '@weasy/locales/index';
 import Backend from 'i18next-http-backend';
 import type { App } from 'vue';
 import { getDefaultLang } from '@/router/i18nGuard';

@@ -1,5 +1,5 @@
 {
-  "name": "@echo-mind/web",
+  "name": "@weasy/web",
   "type": "module",
   "scripts": {
     "dev": "vite --host",
@@ -13,12 +13,12 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "@echo-mind/locales": "workspace:*",
-    "@echo-mind/types": "workspace:*",
-    "@echo-mind/utils": "workspace:*",
     "@vueuse/core": "^12.5.0",
     "@vueuse/router": "^12.5.0",
     "@vueuse/shared": "^12.5.0",
+    "@weasy/locales": "workspace:*",
+    "@weasy/types": "workspace:*",
+    "@weasy/utils": "workspace:*",
     "await-to-js": "^3.0.0",
     "i18next": "^24.2.2",
     "i18next-browser-languagedetector": "^8.0.2",

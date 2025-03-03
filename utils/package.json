@@ -1,5 +1,5 @@
 {
-  "name": "@echo-mind/utils",
+  "name": "@weasy/utils",
   "type": "module",
   "exports": {
     "./*": "./*.ts"

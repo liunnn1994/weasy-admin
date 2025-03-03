@@ -1,5 +1,5 @@
 {
-  "name": "echo-mind",
+  "name": "weasy",
   "version": "0.0.0",
   "description": "",
   "keywords": [],
@@ -8,15 +8,15 @@
   "type": "module",
   "scripts": {
     "cz": "git-cz",
-    "cz:server": "pnpm -r --filter @echo-mind/server run cz",
+    "cz:server": "pnpm -r --filter @weasy/server run cz",
     "prepare": "simple-git-hooks",
     "semantic-release": "semantic-release",
     "upgrade:all": "run-s upgrade:deps upgrade:engines",
     "upgrade:deps": "npx taze -r -w",
     "upgrade:engines": "node scripts/upgradeEngines.mjs",
-    "dev:web": "pnpm -r --filter @echo-mind/web run dev",
-    "dev:server": "pnpm -r --filter @echo-mind/server run dev",
-    "build:web": "pnpm -r --filter @echo-mind/web run build"
+    "dev:web": "pnpm -r --filter @weasy/web run dev",
+    "dev:server": "pnpm -r --filter @weasy/server run dev",
+    "build:web": "pnpm -r --filter @weasy/web run build"
   },
   "simple-git-hooks": {
     "pre-commit": "lint-staged",

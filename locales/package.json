@@ -1,5 +1,5 @@
 {
-  "name": "@echo-mind/locales",
+  "name": "@weasy/locales",
   "type": "module",
   "exports": {
     "./*": "./*.ts"

@@ -1,3 +1,3 @@
 [submodule "apps/server"]
 	path = apps/server
-	url = git@github.com:liunnn1994/EchoMindBE.git
+	url = git@github.com:liunnn1994/weasy-admin-server.git

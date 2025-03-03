@@ -1,4 +1,4 @@
-import { fallbackLng, preload } from '@echo-mind/locales/index';
+import { fallbackLng, preload } from '@weasy/locales/index';
 import type { Router } from 'vue-router';
 
 export const SUPPORT_LOCALES = preload.map((item) => item.lng);

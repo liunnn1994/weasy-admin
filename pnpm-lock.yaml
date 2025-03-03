@@ -91,13 +91,13 @@ importers:
       '@commitlint/config-conventional':
         specifier: ^19.7.1
         version: 19.7.1
-      '@echo-mind/locales':
+      '@weasy/locales':
         specifier: workspace:*
         version: link:../../locales
-      '@echo-mind/types':
+      '@weasy/types':
         specifier: workspace:*
         version: link:../../types
-      '@echo-mind/utils':
+      '@weasy/utils':
         specifier: workspace:*
         version: link:../../utils
       '@rollup/plugin-terser':
@@ -130,13 +130,13 @@ importers:
 
   apps/web:
     dependencies:
-      '@echo-mind/locales':
+      '@weasy/locales':
         specifier: workspace:*
         version: link:../../locales
-      '@echo-mind/types':
+      '@weasy/types':
         specifier: workspace:*
         version: link:../../types
-      '@echo-mind/utils':
+      '@weasy/utils':
         specifier: workspace:*
         version: link:../../utils
       '@vueuse/core':
