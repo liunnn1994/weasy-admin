@@ -14,10 +14,8 @@
     "upgrade:all": "run-s upgrade:deps upgrade:engines",
     "upgrade:deps": "taze -r -w -i false -I false",
     "upgrade:engines": "node scripts/upgradeEngines.mjs",
-    "dev:web": "pnpm -r --filter @weasy/web run dev",
     "dev:creator": "pnpm -r --filter @weasy/creator run dev",
-    "dev:server": "pnpm -r --filter @weasy/weasy-admin-server run dev",
-    "build:web": "pnpm -r --filter @weasy/web run build"
+    "dev:server": "pnpm -r --filter @weasy/weasy-admin-server run dev"
   },
   "simple-git-hooks": {
     "pre-commit": "lint-staged",

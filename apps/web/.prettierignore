@@ -1,7 +1,0 @@
-**/*.md
-components.d.ts
-auto-imports.d.ts
-.npmrc
-*-lock.json
-.browserslistrc
-arco-components.d.ts
