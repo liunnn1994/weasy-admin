@@ -8,14 +8,14 @@
   "type": "module",
   "scripts": {
     "cz": "git-cz",
-    "cz:server": "pnpm -r --filter @weasy/server run cz",
+    "cz:server": "pnpm -r --filter @weasy/weasy-admin-server run cz",
     "prepare": "simple-git-hooks",
     "semantic-release": "semantic-release",
     "upgrade:all": "run-s upgrade:deps upgrade:engines",
-    "upgrade:deps": "npx taze -r -w",
+    "upgrade:deps": "taze -r -w -i false -I false",
     "upgrade:engines": "node scripts/upgradeEngines.mjs",
     "dev:web": "pnpm -r --filter @weasy/web run dev",
-    "dev:server": "pnpm -r --filter @weasy/server run dev",
+    "dev:server": "pnpm -r --filter @weasy/weasy-admin-server run dev",
     "build:web": "pnpm -r --filter @weasy/web run build"
   },
   "simple-git-hooks": {
@@ -23,7 +23,7 @@
     "commit-msg": "commitlint -e"
   },
   "dependencies": {
-    "axios": "^1.7.9"
+    "axios": "^1.8.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.7.1",
@@ -33,21 +33,23 @@
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^11.0.1",
     "@semantic-release/npm": "^12.0.1",
+    "@types/node": "^22.13.9",
     "git-cz": "^4.9.0",
     "lint-staged": "^15.4.3",
     "npm-run-all2": "^7.0.2",
-    "prettier": "^3.5.0",
-    "prettier-plugin-packagejson": "^2.5.8",
+    "prettier": "^3.5.3",
+    "prettier-plugin-packagejson": "^2.5.10",
     "prettier-plugin-tailwindcss": "^0.6.11",
-    "semantic-release": "^24.2.2",
-    "simple-git-hooks": "^2.11.1"
+    "semantic-release": "^24.2.3",
+    "simple-git-hooks": "^2.11.1",
+    "taze": "^18.6.0"
   },
-  "packageManager": "pnpm@10.2.1",
+  "packageManager": "pnpm@10.5.2",
   "engines": {
-    "node": "22.13.1"
+    "node": "22.14.0"
   },
   "volta": {
-    "node": "22.13.1",
-    "pnpm": "10.2.0"
+    "node": "22.14.0",
+    "pnpm": "10.5.2"
   }
 }
